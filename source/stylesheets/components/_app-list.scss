@@ -9,11 +9,6 @@
       box-shadow: $list-shadow;
     }
   }
-
-  svg {
-    @include size($base-spacing);
-    fill: currentColor;
-  }
 }
 
 .app-list-primary,
@@ -39,6 +34,10 @@
 
 .app-list-site {
   @include flex;
+
+  svg {
+    @include size($base-spacing);
+  }
 }
 
 .app-list-repo {

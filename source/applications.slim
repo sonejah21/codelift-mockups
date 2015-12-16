@@ -20,14 +20,14 @@ main
             .app-list-branch = r.branch
             .app-list-actions
               = link_to "Info", "application.html", class: "button button-fill"
-              button.delete
+              button.button-circle.delete
                 = partial "x.svg"
 
 .modal-overlay
   .modal#add-app
     header.modal-header
       h3 Add Application
-      = link_to "#add-app", class: "button delete modal-toggle" do
+      = link_to "#add-app", class: "button-circle modal-toggle" do
         = partial "x.svg"
     .modal-body
       .add-app-search

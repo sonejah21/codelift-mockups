@@ -60,3 +60,31 @@
     }
   }
 }
+
+.button-circle {
+  @include size($base-spacing);
+  align-items: center;
+  background-color: $base-border-color;
+  border-radius: 50%;
+  color: $medium-gray;
+  display: flex;
+  font-size: $base-spacing;
+  justify-content: center;
+  line-height: $base-spacing;
+  padding: 0;
+  transition: background-color $base-transition, color $base-transition;
+
+  &:hover {
+    background-color: $medium-gray;
+    color: $white;
+  }
+
+  &.delete:hover {
+    background-color: $error-color;
+    color: $white;
+  }
+
+  svg {
+    @include size(1rem);
+  }
+}

@@ -1,0 +1,32 @@
+.auth-buttons {
+  @include flex;
+  margin-top: $base-spacing;
+
+  li {
+    @include margin(null $small-spacing);
+  }
+
+  a {
+    transition: color $base-transition;
+  }
+
+  svg {
+    @include size(3rem);
+  }
+}
+
+.color-bitbucket {
+  color: $bitbucket;
+
+  &:hover {
+    color: darken($bitbucket, 5%);
+  }
+}
+
+.color-github {
+  color: $github;
+
+  &:hover {
+    color: darken($github, 5%);
+  }
+}

@@ -12,7 +12,6 @@
 
   svg {
     @include size($size);
-    fill: currentColor;
   }
 }
 
@@ -22,7 +21,7 @@
 
 .icon-toggle {
   cursor: pointer;
-  
+
   svg:last-of-type {
     display: none;
   }
