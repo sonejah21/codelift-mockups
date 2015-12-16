@@ -1,0 +1,19 @@
+.form-row {
+  @include flex(flex-start);
+  box-shadow: $list-shadow;
+  flex-wrap: wrap;
+  padding: $small-spacing $base-spacing;
+
+  &.centered {
+    justify-content: center;
+  }
+}
+
+.form-row-label {
+  @include margin($smallest-spacing $base-spacing $smallest-spacing null);
+  flex: 0 0 ($large-spacing * 2);
+}
+
+.form-row-input {
+  flex: 1 0 ($large-spacing * 4);
+}

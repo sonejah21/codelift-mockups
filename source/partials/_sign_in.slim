@@ -1,0 +1,28 @@
+header.modal-header
+  h3 Sign In
+  = link_to "#sign-in", class: "button delete modal-toggle" do
+    = partial "x.svg"
+.modal-body
+  form.sign-in action="applications.html"
+    .icon-row
+      label.icon-row-icon for="email"
+        = partial "email.svg"
+      .icon-field
+        input placeholder="Email" id="email"
+    .icon-row
+      label.icon-row-icon for="password"
+        = partial "password.svg"
+      .icon-field
+        input type="password" placeholder="Password" id="password"
+    .icon-row
+      label.icon-row-icon.icon-toggle for="remember"
+        input type="checkbox" id="remember"
+        = partial "checkbox_outline.svg"
+        = partial "checkbox.svg"
+      .icon-field
+        label for="remember" Remember Me
+    .form-row.centered
+      button class="button button-block" Sign In
+      span.or or
+      button class="button button-block bg-github" Sign In with GitHub
+      button class="button button-block bg-bitbucket" Sign In with Bitbucket

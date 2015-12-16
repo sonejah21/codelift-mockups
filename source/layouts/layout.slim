@@ -1,0 +1,22 @@
+doctype html
+html
+  head
+    meta charset="utf-8"
+    meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"
+    meta name="viewport" content="width=device-width, initial-scale=1"
+    title = current_page.data.title || "CodeLift"
+    = stylesheet_link_tag "all"
+
+  body class="#{page_classes}"
+    header.fixed-header
+      nav.nav
+        .nav-brand CodeLift
+        = partial current_page.data.nav ? "nav/#{current_page.data.nav}" : "nav/default"
+
+    = yield
+
+    footer.site-footer
+      .site-footer-inner footer content
+
+    = javascript_include_tag "all"
+    = yield_content :javascript

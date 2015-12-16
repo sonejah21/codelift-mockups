@@ -1,0 +1,17 @@
+---
+nav: login
+---
+
+main
+  .main-inner
+
+.modal-overlay
+  .modal#register
+    header.modal-header
+      h3 Register
+      = link_to "#register", class: "button delete modal-toggle" do
+        = partial "x.svg"
+    .modal-body
+
+  .modal.narrow#sign-in
+    = partial "sign_in"

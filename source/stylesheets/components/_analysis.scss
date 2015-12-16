@@ -1,0 +1,69 @@
+.analysis {
+  @extend %card;
+  display: flex;
+}
+
+.analysis-status {
+  @include flex;
+  box-shadow: 1px 0 $base-border-color;
+  padding: $base-spacing;
+}
+
+.analysis-results {
+  padding: $base-spacing $small-spacing $small-spacing $base-spacing;
+}
+
+.analysis-tests {
+  li {
+    @include margin(null $small-spacing $small-spacing null);
+    background-color: rgba($black, 0.05);
+    border-radius: $small-spacing;
+    display: inline-block;
+    font-size: $xs-font-size;
+    height: $base-spacing;
+    line-height: $base-spacing;
+    padding: 0 $small-spacing;
+
+    &.absent,
+    &.present {
+      color: $white;
+    }
+
+    &.absent {
+      background-color: $error-color;
+    }
+
+    &.present {
+      background-color: $success-color;
+    }
+  }
+}
+
+.analysis-key {
+  display: flex;
+  margin-top: $small-spacing;
+
+  li {
+    @include flex(flex-start);
+    font-size: $xs-font-size;
+    font-weight: 400;
+    line-height: 1;
+    margin-right: $base-spacing;
+
+    &::before {
+      @include size(0.5rem);
+      border-radius: 50%;
+      content: "";
+      display: block;
+      margin-right: 0.5rem;
+    }
+
+    &.present::before {
+      background-color: $success-color;
+    }
+
+    &.absent::before {
+      background-color: $error-color;
+    }
+  }
+}

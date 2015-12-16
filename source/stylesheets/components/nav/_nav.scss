@@ -1,0 +1,16 @@
+.nav {
+  @include flex(space-between);
+  @include padding(null $base-spacing);
+  height: $nav-height;
+  margin: 0 auto;
+  max-width: $max-width;
+}
+
+.nav-primary,
+.nav-secondary {
+  display: flex;
+}
+
+.nav-primary {
+  flex: 1;
+}

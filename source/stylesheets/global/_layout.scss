@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+
+  &::before,
+  &::after {
+    box-sizing: inherit;
+  }
+}
+
+body {
+  background-color: $base-background-color;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+  padding: $base-spacing $small-spacing;
+}
+
+.main-inner {
+  margin: 0 auto;
+  max-width: $max-width;
+}

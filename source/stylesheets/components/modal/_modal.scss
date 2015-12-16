@@ -1,0 +1,44 @@
+.modal-active {
+  overflow: hidden;
+}
+
+.modal {
+  @extend %card;
+  @include margin(null auto);
+  @include position(absolute, 50% $small-spacing null);
+  box-shadow: $modal-shadow;
+  max-height: 0;
+  max-width: $max-modal-width;
+  min-width: 290px;
+  overflow: hidden;
+  transform: translateY(calc(-50% + 1rem));
+  transition: max-height 0s $base-duration, transform $base-transition;
+
+  &.active {
+    max-height: $max-modal-height;
+    transform: translateY(-50%);
+    transition: max-height 0s, transform $base-transition;
+  }
+
+  &.narrow {
+    max-width: 380px;
+  }
+}
+
+.modal-header {
+  @include flex(space-between);
+  @include padding(null $base-spacing);
+  background-color: rgba($light-gray, 0.5);
+  box-shadow: inset 0 -1px $light-gray;
+  height: $large-spacing;
+
+  h3 {
+    font-weight: 300;
+    margin: 0;
+  }
+}
+
+.modal-body {
+  max-height: calc(#{$max-modal-height} - #{$large-spacing});
+  overflow: auto;
+}

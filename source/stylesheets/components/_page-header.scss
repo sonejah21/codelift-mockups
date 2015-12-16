@@ -1,0 +1,28 @@
+.page-header {
+  background-color: $white;
+  box-shadow: $card-shadow;
+  padding: ($nav-height + $large-spacing) $small-spacing $base-spacing;
+}
+
+.page-header-inner {
+  @include flex(space-between, flex-end);
+  @include padding(null $base-spacing);
+  color: $primary-color;
+  margin: 0 auto;
+  max-width: $max-width;
+
+  h1 {
+    @include flex(flex-start);
+    margin: 0;
+  }
+
+  svg {
+    @include size(rem(40));
+    fill: $primary-color;
+    margin-right: $small-spacing;
+  }
+
+  span {
+    opacity: 0.5;
+  }
+}

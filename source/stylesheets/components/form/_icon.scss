@@ -1,0 +1,43 @@
+.icon-row {
+  @include flex(space-between);
+  flex-wrap: wrap;
+  margin: $base-spacing;
+}
+
+.icon-row-icon {
+  $size: 1.5rem;
+  @include flex;
+  @include size(($size * 2) $base-spacing);
+  padding-right: $size;
+
+  svg {
+    @include size($size);
+    fill: currentColor;
+  }
+}
+
+.icon-field {
+  flex: 1;
+}
+
+.icon-toggle {
+  cursor: pointer;
+  
+  svg:last-of-type {
+    display: none;
+  }
+
+  input {
+    display: none;
+
+    &:checked ~ svg {
+      &:first-of-type {
+        display: none;
+      }
+
+      &:last-of-type {
+        display: block;
+      }
+    }
+  }
+}

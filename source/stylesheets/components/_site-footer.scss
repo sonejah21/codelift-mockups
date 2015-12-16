@@ -1,0 +1,11 @@
+.site-footer {
+  background-color: $medium-gray;
+  box-shadow: inset 0 1px rgba($dark-gray, 0.5);
+  color: $white;
+  padding: $base-spacing;
+}
+
+.site-footer-inner {
+  margin: 0 auto;
+  max-width: $max-width;
+}

@@ -1,0 +1,47 @@
+---
+---
+
+header.page-header
+  .page-header-inner
+    h1 Applications
+    = link_to "Add Application", "#add-app", class: "button modal-toggle"
+
+main
+  .main-inner
+    ol.app-list
+      - data.repos.each do |r|
+        li
+          .app-list-primary
+            .app-list-site
+              = partial "#{r.site}.svg"
+            .app-list-repo
+              <span>#{r.org} /</span> <strong>#{r.repo}</strong>
+          .app-list-secondary
+            .app-list-branch = r.branch
+            .app-list-actions
+              = link_to "Info", "application.html", class: "button button-fill"
+              button.delete
+                = partial "x.svg"
+
+.modal-overlay
+  .modal#add-app
+    header.modal-header
+      h3 Add Application
+      = link_to "#add-app", class: "button delete modal-toggle" do
+        = partial "x.svg"
+    .modal-body
+      .add-app-search
+        input type="search" placeholder="filter"
+      ol.add-app-list
+        - data.repos.each do |r|
+          li
+            .add-app-repo
+              <span>#{r.org} /</span> <strong>#{r.repo}</strong>
+            .add-app-branch
+              .select
+                select
+                  option Branch or Tag
+                  option master
+                  option develop
+            .add-app-button
+              button.button-small Analyze

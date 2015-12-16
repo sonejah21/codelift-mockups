@@ -1,0 +1,16 @@
+.nav-link {
+  @include flex;
+  box-shadow: inset 0 0 transparent;
+  color: rgba($white, 0.75);
+  font-size: rem(18);
+  font-weight: 100;
+  height: $nav-height;
+  letter-spacing: 0.03em;
+  margin-left: $base-spacing;
+  transition: box-shadow $base-duration $ease-in-out-back, color $base-transition;
+
+  &:hover {
+    box-shadow: inset 0 -3px $tertiary-color;
+    color: $white;
+  }
+}

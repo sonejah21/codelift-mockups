@@ -1,0 +1,6 @@
+.section-header {
+  @include flex(flex-start);
+  color: rgba($primary-color, 0.75);
+  font-size: $xl-font-size;
+  padding: $base-spacing $base-spacing $small-spacing;
+}

@@ -1,0 +1,7 @@
+.fixed-header {
+  @include padding(null $small-spacing);
+  @include position(fixed, 0 0 null 0);
+  background-color: rgba($primary-color, 0.95);
+  box-shadow: 0 2px $tertiary-color;
+  z-index: $fixed-header-z-index;
+}

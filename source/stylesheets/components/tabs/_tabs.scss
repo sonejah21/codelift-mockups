@@ -1,0 +1,21 @@
+.tabs {
+  background-color: rgba($black, 0.02);
+  border-radius: $base-border-radius;
+  box-shadow: inset $card-shadow;
+}
+
+.tabs-section {
+  display: none;
+  padding: $base-spacing;
+
+  &.active {
+    display: block;
+  }
+}
+
+.tabs-footer {
+  @include flex(flex-start);
+  box-shadow: inset 0 1px $base-border-color;
+  height: $large-spacing;
+  padding: 0 $base-spacing;
+}

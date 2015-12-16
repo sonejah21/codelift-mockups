@@ -1,0 +1,53 @@
+.add-app-list {
+  li {
+    @include flex;
+    box-shadow: $list-shadow;
+    font-size: $small-font-size;
+    padding: $small-spacing $base-spacing;
+  }
+}
+
+.add-app-repo {
+  flex: 1;
+  margin-right: $base-spacing;
+
+  span,
+  strong {
+    display: inline-block;
+  }
+}
+
+.add-app-branch {
+  @include flex(flex-start);
+  margin-right: $base-spacing;
+}
+
+.add-app-button {
+  @include flex(flex-end);
+}
+
+.add-app-search {
+  padding: $small-spacing;
+  position: relative;
+
+  &::before {
+    @include position(absolute, 0 null 0 0);
+    @include size(1.5rem);
+    background-image: image-url("search.svg");
+    background-size: auto 100%;
+    content: "";
+    margin: auto $base-spacing;
+    pointer-events: none;
+  }
+
+  input {
+    @include padding(null $base-spacing + 1rem);
+    border: 0;
+    border-radius: $large-spacing;
+    box-shadow: none;
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+}

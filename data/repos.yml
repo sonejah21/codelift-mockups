@@ -1,0 +1,40 @@
+-
+  site: github
+  org: serious
+  repo: business
+  branch: release-4.0.0
+-
+  site: bitbucket
+  org: a-super-long-org-name
+  repo: really-really-long-repo-name
+  branch: master
+-
+  site: github
+  org: developer
+  repo: code-mountain
+  branch: develop
+-
+  site: github
+  org: developer
+  repo: code-mountain
+  branch: master
+-
+  site: github
+  org: serious
+  repo: business
+  branch: release-4.0.0
+-
+  site: bitbucket
+  org: a-super-long-org-name
+  repo: really-really-long-repo-name
+  branch: master
+-
+  site: github
+  org: developer
+  repo: code-mountain
+  branch: develop
+-
+  site: github
+  org: developer
+  repo: code-mountain
+  branch: master

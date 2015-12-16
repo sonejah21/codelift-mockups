@@ -1,0 +1,62 @@
+.button,
+#{$all-buttons} {
+  appearance: none;
+  background-color: $action-color;
+  border: 0;
+  border-radius: $base-border-radius;
+  color: $white;
+  cursor: pointer;
+  display: inline-block;
+  font-family: $base-font-family;
+  font-size: $xs-font-size;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  line-height: 1;
+  padding: $small-spacing $base-spacing;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background-color $base-transition, color $base-transition;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+
+  &:hover,
+  &:focus {
+    background-color: darken($action-color, 5%);
+    color: $white;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+
+    &:hover {
+      background-color: $action-color;
+    }
+  }
+
+  &.button-small {
+    font-size: $xxs-font-size;
+    padding: $smallest-spacing $small-spacing;
+  }
+
+  &.button-block {
+    display: block;
+    width: 100%;
+
+    & + & {
+      margin-top: $small-spacing;
+    }
+  }
+
+  &.button-fill {
+    background-color: rgba($dark-gray, 0.03);
+    color: $action-color;
+
+    &:hover {
+      background-color: $action-color;
+      color: $white;
+    }
+  }
+}

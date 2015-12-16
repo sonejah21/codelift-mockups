@@ -1,0 +1,15 @@
+.modal-overlay {
+  @include linear-gradient(rgba($primary-color, 0.8), rgba($black, 0.8));
+  @include padding($modal-margin null);
+  @include position(fixed, 0);
+  opacity: 0;
+  transition: opacity $base-transition, visibility 0s $base-duration;
+  visibility: hidden;
+  z-index: $modal-overlay-z-index;
+
+  .modal-active & {
+    opacity: 1;
+    transition: opacity $base-transition, visibility 0s;
+    visibility: visible;
+  }
+}

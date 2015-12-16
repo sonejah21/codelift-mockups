@@ -1,0 +1,20 @@
+.bg-bitbucket {
+  background-color: $bitbucket;
+
+  &:hover {
+    background-color: darken($bitbucket, 5%);
+  }
+}
+
+.bg-github {
+  background-color: $github;
+
+  &:hover {
+    background-color: darken($github, 5%);
+  }
+}
+
+.or {
+  font-size: $xs-font-size;
+  margin: $smallest-spacing 0;
+}

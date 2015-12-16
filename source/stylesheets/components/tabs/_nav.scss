@@ -1,0 +1,33 @@
+.tabs-nav {
+  @include flex(space-between);
+  box-shadow: inset 0 -1px $base-border-color;
+  padding: 0 $base-spacing;
+
+  ul {
+    display: flex;
+  }
+
+  li {
+    margin-right: $base-spacing;
+  }
+}
+
+.tabs-link {
+  @include flex;
+  box-shadow: inset 0 -1px rgba($primary-color, 0);
+  font-size: $xs-font-size;
+  font-weight: 400;
+  height: $large-spacing;
+  opacity: 0.5;
+  transition: box-shadow $base-transition, opacity $base-transition;
+
+  &:hover {
+    box-shadow: inset 0 -1px rgba($primary-color, 1);
+  }
+
+  &.active {
+    box-shadow: inset 0 -3px $primary-color;
+    opacity: 1;
+    transition: box-shadow $base-duration $ease-in-out-back, opacity $base-transition;
+  }
+}
