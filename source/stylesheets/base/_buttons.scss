@@ -51,7 +51,7 @@
   }
 
   &.button-fill {
-    background-color: rgba($dark-gray, 0.03);
+    background-color: $light-border-color;
     color: $action-color;
 
     &:hover {
@@ -64,7 +64,7 @@
 .button-circle {
   @include size($base-spacing);
   align-items: center;
-  background-color: $base-border-color;
+  background-color: $light-border-color;
   border-radius: 50%;
   color: $medium-gray;
   display: flex;

@@ -16,7 +16,7 @@
 .analysis-tests {
   li {
     @include margin(null $small-spacing $small-spacing null);
-    background-color: rgba($black, 0.05);
+    background-color: $light-border-color;
     border-radius: $small-spacing;
     display: inline-block;
     font-size: $xs-font-size;

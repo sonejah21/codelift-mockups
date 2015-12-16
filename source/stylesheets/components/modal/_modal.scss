@@ -42,3 +42,9 @@
   max-height: calc(#{$max-modal-height} - #{$large-spacing});
   overflow: auto;
 }
+
+.modal-footer {
+  background-color: $light-border-color;
+  box-shadow: inset 0 1px $light-gray;
+  padding: $small-spacing;
+}

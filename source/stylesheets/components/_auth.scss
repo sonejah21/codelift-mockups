@@ -30,3 +30,16 @@
     color: darken($github, 5%);
   }
 }
+
+.auth-links {
+  text-align: center;
+
+  li {
+    font-size: $xs-font-size;
+    font-weight: 400;
+
+    & + & {
+      margin-top: $small-spacing;
+    }
+  }
+}

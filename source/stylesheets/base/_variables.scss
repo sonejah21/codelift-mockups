@@ -53,10 +53,11 @@ $action-color: $primary-color;
 // Border
 $base-border-color: rgba($dark-gray, 0.1);
 $base-border: 1px solid $base-border-color;
+$light-border-color: rgba($dark-gray, 0.05);
 
 // Shadows
 $card-shadow: 0 1px 5px $base-border-color;
-$list-shadow: 0 -1px rgba($dark-gray, 0.05);
+$list-shadow: 0 -1px $light-border-color;
 $modal-shadow: 0 5px 40px rgba($black, 0.5);
 
 // Background Colors
