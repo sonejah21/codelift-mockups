@@ -1,7 +1,5 @@
 .tabs {
-  background-color: rgba($black, 0.02);
-  border-radius: $base-border-radius;
-  box-shadow: inset $card-shadow;
+  @extend %inset-card;
 }
 
 .tabs-section {

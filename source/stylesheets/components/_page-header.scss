@@ -13,6 +13,8 @@
 
   h1 {
     @include flex(flex-start);
+    font-size: rem(40);
+    font-weight: 100;
     margin: 0;
   }
 

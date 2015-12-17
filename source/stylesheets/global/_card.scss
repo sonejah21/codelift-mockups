@@ -4,3 +4,9 @@
   border-radius: $base-border-radius;
   box-shadow: $card-shadow;
 }
+
+%inset-card {
+  background-color: $faint-border-color;
+  border-radius: $base-border-radius;
+  box-shadow: inset $card-shadow;
+}
