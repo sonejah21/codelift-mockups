@@ -6,36 +6,27 @@
   &:hover {
     cursor: pointer;
 
-    .avatar {
-      background-color: $tertiary-color;
-    }
-
     .nav-dropdown {
-      margin-top: -0.75rem;
+      margin-top: -0.5rem;
       opacity: 1;
       transition: margin $base-transition, opacity $base-transition, visibility 0s;
       visibility: visible;
     }
   }
-
-  .avatar {
-    background-color: white;
-    padding: 2px;
-    transition: background-color $base-transition;
-  }
 }
 
 .nav-dropdown {
-  @include position(absolute, 100% (-$small-spacing) null null);
+  @include position(absolute, 100% 50% null null);
   border-radius: $base-border-radius;
   box-shadow: $card-shadow;
   opacity: 0;
+  transform: translateX(50%);
   transition: margin $base-transition, opacity $base-transition, visibility 0s $base-duration;
   visibility: hidden;
 
   &::before {
-    @include position(absolute, null $base-spacing 100% null);
-    @include triangle(10px, $white, up);
+    @include position(absolute, null 50% 100% null);
+    @include triangle(8px, $white, up);
     content: "";
     transform: translateX(50%);
   }
@@ -59,11 +50,12 @@
 }
 
 .nav-dropdown-link {
-  @include flex(flex-end);
-  @include padding(null $base-spacing);
+  $size: $xs-font-size;
+  @include flex;
+  @include padding(null $size * 2);
   background-color: $white;
-  font-size: $small-font-size;
+  font-size: $size;
   font-weight: 400;
-  height: $small-font-size * 3;
+  height: $size * 3;
   transition: background-color $base-transition;
 }

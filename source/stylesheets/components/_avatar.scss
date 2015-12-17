@@ -1,4 +1,4 @@
 .avatar {
-  @include size($base-spacing);
+  @include size($avatar-size);
   border-radius: 50%;
 }

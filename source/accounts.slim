@@ -1,0 +1,19 @@
+---
+---
+
+header.page-header
+  .page-header-inner
+    h1 Accounts
+
+main
+  .main-inner
+    ul
+      - data.accounts.each do |a|
+        li.account
+          .account-description
+            h2
+              = partial "#{a.icon}.svg"
+              span = a.name
+            p = a.description
+          .account-actions
+            button class="button-block #{a.action}" = a.action

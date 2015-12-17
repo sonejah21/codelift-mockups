@@ -1,0 +1,44 @@
+.account {
+  @extend %card;
+  margin-bottom: $base-spacing;
+
+  @include media($large-screen-up) {
+    display: flex;
+  }
+}
+
+.account-description,
+.account-actions {
+  padding: $base-spacing;
+}
+
+.account-description {
+  flex: 1;
+
+  svg {
+    @include size(rem(43));
+    margin-right: $base-spacing;
+  }
+
+  h2 {
+    @include flex(flex-start);
+    font-size: rem(40);
+    font-weight: 100;
+    line-height: 1;
+    margin-bottom: $base-spacing;
+  }
+}
+
+.account-actions {
+  @include flex;
+  box-shadow: 0 -1px $base-border-color;
+  flex-basis: 16rem;
+
+  @include media($large-screen-up) {
+    box-shadow: -1px 0 $base-border-color;
+  }
+
+  .deactivate {
+    @extend .button-fill;
+  }
+}
