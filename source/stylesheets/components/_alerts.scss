@@ -1,0 +1,30 @@
+.alerts {
+  margin-bottom: $base-spacing;
+}
+
+.alert {
+  @extend %card;
+  @include flex;
+  background-color: $medium-gray;
+  color: $white;
+  cursor: pointer;
+  margin-bottom: $small-spacing;
+  padding: $small-spacing $base-spacing;
+
+  &.success {
+    background-color: $success-color;
+  }
+
+  &.error {
+    background-color: $error-color;
+  }
+
+  span {
+    flex: 1;
+    margin-right: $base-spacing;
+  }
+
+  .button-circle {
+    color: $white;
+  }
+}

@@ -7,7 +7,7 @@ $duration: 1.4s;
 
   .fill {
     animation: dash $duration ease-in-out infinite;
-    stroke: $primary-color;
+    stroke: $action-color;
     stroke-dasharray: $offset;
     stroke-dashoffset: 0;
     transform-origin: center;

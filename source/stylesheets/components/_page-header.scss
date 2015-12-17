@@ -7,7 +7,7 @@
 .page-header-inner {
   @include flex(space-between, flex-end);
   @include padding(null $base-spacing);
-  color: $primary-color;
+  color: $action-color;
   margin: 0 auto;
   max-width: $max-width;
 
@@ -20,7 +20,6 @@
 
   svg {
     @include size(rem(40));
-    fill: $primary-color;
     margin-right: $small-spacing;
   }
 
