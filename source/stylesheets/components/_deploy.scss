@@ -1,0 +1,63 @@
+.deploy {
+  @include margin(-$small-spacing);
+
+  @include media($large-screen-up) {
+    @include flex(flex-start, flex-start);
+    flex-wrap: wrap;
+  }
+}
+
+.deploy-option {
+  @extend %card;
+  @include flex;
+  flex-basis: calc(50% - #{$base-spacing});
+  margin: $small-spacing;
+}
+
+.deploy-action {
+  @include flex;
+  padding: $small-spacing $base-spacing;
+
+  &:first-child {
+    box-shadow: 1px 0 $base-border-color;
+  }
+}
+
+.deploy-info {
+  flex: 1;
+  padding: $small-spacing $base-spacing;
+}
+
+.deploy-name {
+  font-size: $large-font-size;
+  font-weight: 300;
+  margin-bottom: $smallest-spacing;
+}
+
+.deploy-status {
+  font-size: $xxs-font-size;
+  margin-bottom: 0;
+}
+
+.deploy-actions {
+  background-color: $faint-border-color;
+  box-shadow: inset 0 1px $light-gray;
+  margin-top: $small-spacing;
+  padding: $small-spacing $base-spacing $base-spacing;
+
+  h6 {
+    font-size: $xxs-font-size;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  ul {
+    @include flex(space-between);
+    @include margin(null (-$smallest-spacing));
+  }
+
+  li {
+    @include margin(null $smallest-spacing);
+    flex: 1;
+  }
+}

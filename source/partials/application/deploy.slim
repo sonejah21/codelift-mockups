@@ -1,1 +1,43 @@
 header.section-header Deploy
+
+ul.deploy
+  li.deploy-option
+    .deploy-action
+      button.button-icon
+        = partial "svg/deploy.svg"
+    .deploy-info
+      h2.deploy-name DockerHub
+      h5.deploy-status Ready to Deploy
+    .deploy-action
+      button.button-circle
+        = partial "svg/settings.svg"
+  li.deploy-option
+    .deploy-action
+      button.button-icon
+        = partial "svg/deploy-done.svg"
+    .deploy-info
+      h2.deploy-name Amazon ECS
+      h5.deploy-status Deployed
+    .deploy-action
+      button.button-circle
+        = partial "svg/settings.svg"
+  li.deploy-option
+    .deploy-action
+      button.button-icon
+        = partial "svg/spinner.svg"
+    .deploy-info
+      h2.deploy-name Another Platform
+      h5.deploy-status Deploying
+    .deploy-action
+      button.button-circle
+        = partial "svg/settings.svg"
+  li.deploy-option
+    .deploy-action
+      button.button-icon disabled="disabled"
+        = partial "svg/deploy.svg"
+    .deploy-info
+      h2.deploy-name Amazon S3
+      h5.deploy-status Credentials Required
+    .deploy-action
+      button.button-circle
+        = partial "svg/settings.svg"

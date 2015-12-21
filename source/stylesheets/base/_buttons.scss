@@ -21,70 +21,13 @@
   vertical-align: middle;
   white-space: nowrap;
 
-  &:hover,
-  &:focus {
+  &:hover {
     background-color: darken($action-color, 5%);
-    color: $white;
   }
 
   &:disabled {
-    cursor: not-allowed;
-    opacity: 0.5;
-
-    &:hover {
-      background-color: $action-color;
-    }
-  }
-
-  &.button-small {
-    font-size: $xxs-font-size;
-    padding: $smallest-spacing $small-spacing;
-  }
-
-  &.button-block {
-    display: block;
-    width: 100%;
-
-    & + & {
-      margin-top: $small-spacing;
-    }
-  }
-
-  &.button-fill {
-    background-color: rgba($black, 0.04);
-    color: $action-color;
-
-    &:hover {
-      background-color: $action-color;
-      color: $white;
-    }
-  }
-}
-
-.button-circle {
-  @include size($base-spacing);
-  align-items: center;
-  background-color: rgba($black, 0.04);
-  border-radius: 50%;
-  color: $medium-gray;
-  display: flex;
-  font-size: $base-spacing;
-  justify-content: center;
-  line-height: $base-spacing;
-  padding: 0;
-  transition: background-color $base-transition, color $base-transition;
-
-  &:hover {
-    background-color: rgba($black, 0.12);
-    color: $white;
-  }
-
-  &.delete:hover {
-    background-color: $error-color;
-    color: $white;
-  }
-
-  svg {
-    @include size(1rem);
+    cursor: default;
+    opacity: 0.25;
+    pointer-events: none;
   }
 }
