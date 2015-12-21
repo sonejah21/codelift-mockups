@@ -1,36 +1,34 @@
-.modal.narrow#sign-in
+.modal.narrow#register
   header.modal-header
-    h3 Sign In
-    = link_to "#sign-in", class: "button-circle modal-toggle" do
-      = partial "x.svg"
+    h3 Register
+    = link_to "#register", class: "button-circle modal-toggle" do
+      = partial "svg/x.svg"
   .modal-body
     form.sign-in action="applications.html"
       .icon-row
         label.icon-row-icon for="email"
-          = partial "email.svg"
+          = partial "svg/email.svg"
         .icon-field
           input placeholder="Email" id="email"
       .icon-row
         label.icon-row-icon for="password"
-          = partial "password.svg"
+          = partial "svg/password.svg"
         .icon-field
           input type="password" placeholder="Password" id="password"
       .icon-row
-        label.icon-row-icon.icon-toggle for="remember"
-          input type="checkbox" id="remember"
-          = partial "checkbox_outline.svg"
-          = partial "checkbox.svg"
+        label.icon-row-icon for="confirm_password"
+          = partial "svg/password.svg"
         .icon-field
-          label for="remember" Remember Me
+          input type="password" placeholder="Confirm Password" id="confirm_password"
       .form-row.centered
-        button class="button button-block" Sign In
+        button class="button button-block" Register
         ul.auth-buttons
           li
             = link_to "applications.html", class: "color-github" do
-              = partial "github.svg"
+              = partial "svg/github.svg"
           li
             = link_to "applications.html", class: "color-bitbucket" do
-              = partial "bitbucket.svg"
+              = partial "svg/bitbucket.svg"
     footer.modal-footer
       ul.auth-links
-        li = link_to "Forgot your Password?", "#"
+        li Already Registered? <a href="#">Sign In</a>.

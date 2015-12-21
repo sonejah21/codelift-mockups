@@ -1,0 +1,22 @@
+header.section-header Analysis
+
+section.analysis
+  .analysis-status
+    = partial "svg/spinner.svg"
+  .analysis-results
+    ol.analysis-tests
+      li.absent node.js
+      li.absent django
+      li.absent spring
+      li.present rack
+      li.present rails
+      li.present rails/activerecord
+      li.absent rails/sequel
+      li.absent rails/activerecord/mysql
+      li.present rails/activerecord/postgres
+      li.present rails/assets
+      li rails/redis
+      li rails/workers
+    ul.analysis-key
+      li.present Present
+      li.absent Absent

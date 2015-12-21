@@ -4,98 +4,12 @@
 header.page-header
   .page-header-inner
     h1
-      = partial "github.svg"
+      = partial "svg/github.svg"
       <span>serious/</span>business
 
 main
   .main-inner
-    header.section-header
-      | Analysis
-
-    section.analysis
-      .analysis-status
-        = partial "spinner.svg"
-      .analysis-results
-        ol.analysis-tests
-          li.absent node.js
-          li.absent django
-          li.absent spring
-          li.present rack
-          li.present rails
-          li.present rails/activerecord
-          li.absent rails/sequel
-          li.absent rails/activerecord/mysql
-          li.present rails/activerecord/postgres
-          li.present rails/assets
-          li rails/redis
-          li rails/workers
-        ul.analysis-key
-          li.present Present
-          li.absent Absent
-
-    header.section-header Docker
-    section.tabs#docker
-      nav.tabs-nav
-        ul
-          li
-            = link_to "Dockerfile", "#dockerfile", class: "tabs-link active"
-          li
-            = link_to "docker-compose.yml", "#dockercompose", class: "tabs-link"
-
-        button.button-small Add Files to Repo
-
-      .tabs-section.active#dockerfile
-        pre
-          | FROM ubuntu
-            MAINTAINER Kimbro Staken
-
-            RUN apt-get install -y software-properties-common python
-            RUN add-apt-repository ppa:chris-lea/node.js
-            RUN echo "deb http://us.archive.ubuntu.com/ubuntu/ precise universe" >> /etc/apt/sources.list
-            RUN apt-get update
-            RUN apt-get install -y nodejs
-            #RUN apt-get install -y nodejs=0.6.12~dfsg1-1ubuntu1
-            RUN mkdir /var/www
-
-            ADD app.js /var/www/app.js
-
-            CMD ["/usr/bin/node", "/var/www/app.js"]
-
-      .tabs-section#dockercompose
-        pre
-          | advanced:
-              build: ./database-golang-app
-              working_dir: /go/src/database-golang-app
-              command: go run main.go
-              volumes:
-                - ./database-golang-app:/go/src/database-golang-app
-              links:
-                - database
-              environment:
-                - DB_NAME=advanced-golang-db
-            database:
-              image: mongo:3.0
-              command: mongod --smallfiles --quiet --logpath=/dev/null
-
-      footer.tabs-footer
-        button.button-small Copy to Clipboard
-
-    header.section-header Build
-    pre.console
-      | console output
-        console output
-        console output
-        console output
-        console output
-        console output
-        console output
-        console output
-        console output
-        console output
-        console output
-
-    header.section-header Deploy
-
-- content_for :javascript do
-  javascript:
-    var tabs = new Tabs("#docker");
+    = partial "application/analysis"
+    = partial "application/docker"
+    = partial "application/build"
+    = partial "application/deploy"

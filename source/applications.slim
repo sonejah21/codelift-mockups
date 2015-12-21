@@ -8,54 +8,8 @@ header.page-header
 
 main
   .main-inner
-    ul.alerts
-      li.alert
-        span A hat of the guilty is assumed to be a giddied self.
-        .button-circle
-          = partial "x.svg"
-      li.alert.success
-        span However, a willow can hardly be considered a dowie blouse without also being a stitch.
-        .button-circle
-          = partial "x.svg"
-      li.alert.error
-        span Some posit the centum farmer to be less than talcose.
-        .button-circle
-          = partial "x.svg"
-
-    ol.app-list
-      - data.repos.each do |r|
-        li
-          .app-list-primary
-            .app-list-site
-              = partial "#{r.site}.svg"
-            .app-list-repo
-              <span>#{r.org} /</span> <strong>#{r.repo}</strong>
-          .app-list-secondary
-            .app-list-branch = r.branch
-            .app-list-actions
-              = link_to "Info", "application.html", class: "button button-fill"
-              button.button-circle.delete
-                = partial "x.svg"
+    = partial "applications/alerts"
+    = partial "applications/app-list"
 
 .modal-overlay
-  .modal#add-app
-    header.modal-header
-      h3 Add Application
-      = link_to "#add-app", class: "button-circle modal-toggle" do
-        = partial "x.svg"
-    .modal-body
-      .add-app-search
-        input type="search" placeholder="filter"
-      ol.add-app-list
-        - data.repos.each do |r|
-          li
-            .add-app-repo
-              <span>#{r.org} /</span> <strong>#{r.repo}</strong>
-            .add-app-branch
-              .select
-                select
-                  option Branch or Tag
-                  option master
-                  option develop
-            .add-app-button
-              button.button-small Analyze
+  = partial "applications/add-app"

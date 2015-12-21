@@ -1,0 +1,21 @@
+.modal#add-app
+  header.modal-header
+    h3 Add Application
+    = link_to "#add-app", class: "button-circle modal-toggle" do
+      = partial "svg/x.svg"
+  .modal-body
+    .add-app-search
+      input type="search" placeholder="filter"
+    ol.add-app-list
+      - data.repos.each do |r|
+        li
+          .add-app-repo
+            <span>#{r.org} /</span> <strong>#{r.repo}</strong>
+          .add-app-branch
+            .select
+              select
+                option Branch or Tag
+                option master
+                option develop
+          .add-app-button
+            button.button-small Analyze
