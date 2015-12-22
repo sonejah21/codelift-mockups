@@ -1,14 +1,14 @@
 .page-header {
-  background-color: $white;
-  box-shadow: $card-shadow;
-  padding: ($nav-height + $large-spacing) $small-spacing $base-spacing;
+  background-color: tint($base-background-color, 50%);
+  box-shadow: $card-shadow, 0 0 $large-spacing rgba($black, 0.08);
+  padding: ($nav-height + $base-spacing) $small-spacing 0;
 }
 
 .page-header-inner {
   @include flex(space-between, flex-end);
   @include padding(null $base-spacing);
   color: $action-color;
-  margin: 0 auto;
+  margin: $base-spacing auto;
   max-width: $max-width;
 
   h1 {

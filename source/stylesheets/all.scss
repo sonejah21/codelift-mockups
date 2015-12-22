@@ -7,8 +7,10 @@
 
 @import "global/card";
 @import "global/flex";
+@import "global/file";
 @import "global/layout";
 @import "global/scale-font-size";
+@import "global/select";
 @import "global/spinner";
 
 @import "components/accounts";
@@ -24,7 +26,6 @@
 @import "components/deploy";
 @import "components/fixed-header";
 @import "components/footer";
-@import "components/page-header";
 @import "components/section-header";
 
 @import "components/form/icon";
@@ -35,6 +36,7 @@
 @import "components/nav/brand";
 @import "components/nav/dropdown";
 @import "components/nav/link";
+@import "components/page/header";
 @import "components/tabs/tabs";
 @import "components/tabs/nav";
 

@@ -9,7 +9,10 @@ header.page-header
 
 main
   .main-inner
-    = partial "application/analysis"
-    = partial "application/docker"
+    = partial "application/analyze"
+    = partial "application/configure"
     = partial "application/build"
     = partial "application/deploy"
+
+.modal-overlay
+  = partial "application/settings"

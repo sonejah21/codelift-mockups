@@ -1,0 +1,15 @@
+.file {
+  @include flex;
+  background-color: $faint-border-color;
+  border: 2px dashed $base-border-color;
+  cursor: pointer;
+  height: rem(111);
+
+  input {
+    display: none;
+  }
+
+  span {
+    font-size: $xs-font-size;
+  }
+}

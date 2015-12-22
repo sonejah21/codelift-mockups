@@ -1,0 +1,31 @@
+.modal.narrow#settings
+  header.modal-header
+    h3 Platform Name
+    = link_to "#settings", class: "button button-circle modal-toggle" do
+      = partial "svg/x.svg"
+  .modal-body
+    form
+      .form-row
+        label.form-row-label Example Text Field
+        .form-row-input
+          input type="text" value="Blah blah blah"
+      .form-row
+        label.form-row-label Example Password Field
+        .form-row-input
+          input type="password" value="Blah blah blah"
+      .form-row
+        label.form-row-label Example Dropdown Field
+        .form-row-input
+          .select
+            select
+              option First Option
+              option Second Option
+              option Third Option
+      .form-row
+        label.form-row-label File Field
+        .form-row-input
+          label.file
+            span Drag and Drop File to Upload
+            input type="file"
+    footer.modal-footer
+      button.button-block Save Settings

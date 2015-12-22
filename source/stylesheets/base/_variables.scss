@@ -38,7 +38,7 @@ $github: #4078c0;
 
 $primary-color: $purple;
 $secondary-color: $blue;
-$tertiary-color: $gold;
+$tertiary-color: tint($gold, 34%);
 $success-color: $green;
 $error-color: $red;
 

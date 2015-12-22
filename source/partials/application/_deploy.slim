@@ -9,7 +9,7 @@ ul.deploy
       h2.deploy-name DockerHub
       h5.deploy-status Ready to Deploy
     .deploy-action
-      button.button-circle
+      = link_to "#settings", class: "button button-circle modal-toggle" do
         = partial "svg/settings.svg"
   li.deploy-option
     .deploy-action
@@ -19,7 +19,7 @@ ul.deploy
       h2.deploy-name Amazon ECS
       h5.deploy-status Deployed
     .deploy-action
-      button.button-circle
+      = link_to "#settings", class: "button button-circle modal-toggle" do
         = partial "svg/settings.svg"
   li.deploy-option
     .deploy-action
@@ -29,7 +29,7 @@ ul.deploy
       h2.deploy-name Another Platform
       h5.deploy-status Deploying
     .deploy-action
-      button.button-circle
+      = link_to "#settings", class: "button button-circle modal-toggle" do
         = partial "svg/settings.svg"
   li.deploy-option
     .deploy-action
@@ -39,5 +39,5 @@ ul.deploy
       h2.deploy-name Amazon S3
       h5.deploy-status Credentials Required
     .deploy-action
-      button.button-circle
+      = link_to "#settings", class: "button button-circle modal-toggle" do
         = partial "svg/settings.svg"
