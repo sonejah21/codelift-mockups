@@ -6,13 +6,31 @@ header.page-header
     h1
       = partial "svg/github.svg"
       <span>serious/</span>business
+  nav.page-nav#page-nav
+    ul
+      li
+        = link_to "Analyze", "#analyze", class: "tabs-link active"
+      li
+        = link_to "Configure", "#configure", class: "tabs-link"
+      li
+        = link_to "Build", "#build", class: "tabs-link"
+      li
+        = link_to "Deploy", "#deploy", class: "tabs-link"
 
 main
-  .main-inner
-    = partial "application/analyze"
-    = partial "application/configure"
-    = partial "application/build"
-    = partial "application/deploy"
+  .main-inner#page-sections
+    section.tabs-section.active#analyze
+      = partial "application/analyze"
+    section.tabs-section#configure
+      = partial "application/configure"
+    section.tabs-section#build
+      = partial "application/build"
+    section.tabs-section#deploy
+      = partial "application/deploy"
 
 .modal-overlay
   = partial "application/settings"
+
+- content_for :javascript do
+  javascript:
+    var pageTabs = new Tabs("#page-nav", "#page-sections");

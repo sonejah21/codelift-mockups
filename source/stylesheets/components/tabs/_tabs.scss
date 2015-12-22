@@ -1,10 +1,13 @@
 .tabs {
   @extend %inset-card;
+
+  .tabs-section {
+    padding: $base-spacing;
+  }
 }
 
 .tabs-section {
   display: none;
-  padding: $base-spacing;
 
   &.active {
     display: block;

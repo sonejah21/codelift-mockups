@@ -1,7 +1,6 @@
-function Tabs(el) {
-  this.component = $(el);
-  this.tabsLinks = this.component.find(".tabs-link");
-  this.tabsSections = $(".tabs-section");
+function Tabs(nav, sections) {
+  this.tabsLinks = $(nav).find(".tabs-link");
+  this.tabsSections = $(sections).children(".tabs-section");
   this._init();
 }
 
