@@ -10,7 +10,8 @@ html
   body
     header.fixed-header
       nav.nav
-        .nav-brand CodeLift
+        .nav-brand
+          = partial "svg/logo-white.svg"
         = partial current_page.data.nav ? "nav/#{current_page.data.nav}" : "nav/default"
 
     = yield

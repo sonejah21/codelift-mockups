@@ -1,8 +1,11 @@
 .nav-brand {
   @include flex;
-  box-shadow: inset -1px 0 rgba($black, 0.2);
   color: $white;
-  font-size: rem(20);
   height: $nav-height;
   padding-right: $base-spacing;
+
+  svg {
+    height: $nav-height;
+    width: 7.725rem;
+  }
 }
