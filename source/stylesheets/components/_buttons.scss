@@ -12,24 +12,14 @@
   }
 }
 
-.button-circle {
+.button-circle,
+.button-delete,
+.button-dismiss {
   @include size($base-spacing);
-  background-color: rgba($black, 0.04);
   border-radius: 50%;
-  color: $medium-gray;
   font-size: $base-spacing;
   padding: 0;
   transition: background-color $base-transition, color $base-transition;
-
-  &:hover {
-    background-color: $action-color;
-    color: $white;
-  }
-
-  &.delete:hover {
-    background-color: $error-color;
-    color: $white;
-  }
 
   svg {
     @include size(1rem);
@@ -41,6 +31,36 @@
     svg {
       @include size(1.5rem);
     }
+  }
+}
+
+.button-circle {
+  background-color: $light-border-color;
+  color: $base-font-color;
+
+  &:hover {
+    background-color: $action-color;
+    color: $white;
+  }
+}
+
+.button-delete {
+  background-color: $light-border-color;
+  color: $medium-gray;
+
+  &:hover {
+    background-color: $error-color;
+    color: $white;
+  }
+}
+
+.button-dismiss {
+  background-color: $light-border-color;
+  color: $white;
+
+  &:hover {
+    background-color: $base-border-color;
+    color: $white;
   }
 }
 
@@ -65,7 +85,7 @@
 }
 
 .button-fill {
-  background-color: rgba($black, 0.04);
+  background-color: $light-border-color;
   color: $action-color;
 
   &:hover {
