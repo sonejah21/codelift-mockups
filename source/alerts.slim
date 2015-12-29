@@ -1,0 +1,26 @@
+---
+---
+
+header.page-header
+  .page-header-inner
+    h1 Applications
+    = link_to "Add Application", "#add-app", class: "button modal-toggle"
+
+main
+  .main-inner
+    ul.alerts
+      li.alert
+        span A hat of the guilty is assumed to be a giddied self.
+        .button.button-circle
+          = partial "svg/x.svg"
+      li.alert.success
+        span However, a willow can hardly be considered a dowie blouse without also being a stitch.
+        .button.button-circle
+          = partial "svg/x.svg"
+      li.alert.error
+        span Some posit the centum farmer to be less than talcose.
+        .button.button-circle
+          = partial "svg/x.svg"
+
+.modal-overlay
+  = partial "applications/add-app"
