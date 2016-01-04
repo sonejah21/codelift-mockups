@@ -16,8 +16,9 @@ html
 
     = yield
 
-    footer.site-footer
-      .site-footer-inner footer content
+    footer.footer
+      = partial "svg/logo-white.svg"
+      h6 Copyright 2016 Booz Allen Hamilton Inc. All Rights Reserved.
 
     = javascript_include_tag "all"
     = yield_content :javascript

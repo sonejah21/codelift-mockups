@@ -53,9 +53,9 @@
 }
 
 .copy-nav-header {
+  @include margin(0 null);
   background-color: $faint-border-color;
   box-shadow: inset 3px 0 $action-color;
   font-weight: 300;
-  margin-bottom: 0;
   padding: $small-spacing $base-spacing;
 }

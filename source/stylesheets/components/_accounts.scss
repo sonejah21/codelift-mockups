@@ -22,10 +22,10 @@
 
   h2 {
     @include flex(flex-start);
+    @include margin($small-spacing null $base-spacing);
     font-size: rem(40);
     font-weight: 100;
     line-height: 1;
-    margin-bottom: $base-spacing;
   }
 }
 

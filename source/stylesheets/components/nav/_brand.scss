@@ -5,7 +5,6 @@
   padding-right: $base-spacing;
 
   svg {
-    height: $nav-height;
-    width: 7.725rem;
+    @include size($logo-size);
   }
 }

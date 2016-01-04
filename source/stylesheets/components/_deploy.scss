@@ -29,14 +29,14 @@
 }
 
 .deploy-name {
+  @include margin(0 null $smallest-spacing);
   font-size: $large-font-size;
   font-weight: 300;
-  margin-bottom: $smallest-spacing;
 }
 
 .deploy-status {
+  @include margin(0 null);
   font-size: $xxs-font-size;
-  margin-bottom: 0;
 }
 
 .deploy-actions {
