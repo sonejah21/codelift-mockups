@@ -1,0 +1,10 @@
+section.home-section
+  header.home-header.home-section-inner
+    h2 Supported Languages &amp; Frameworks
+    h4 What we don't know for sure is whether or not authors often misinterpret the train as a bragging limit, when in actuality it feels more like a dullish development.
+  .home-section-inner
+    ul.supported-languages
+      - data.supported_languages.each do |a|
+        li.supported-language
+          = partial "svg/#{a.icon}.svg"
+          h6 = a.name

@@ -1,0 +1,22 @@
+.home-header {
+  text-align: center;
+
+  h2 {
+    @include margin(0 null $base-spacing);
+    color: $action-color;
+    padding-bottom: $base-spacing;
+    position: relative;
+
+    &::after {
+      @include position(absolute, null 0 0);
+      @include size($small-spacing 2px);
+      background-color: currentColor;
+      content: "";
+      margin: auto;
+    }
+
+    .home-section-reverse & {
+      color: $white;
+    }
+  }
+}
