@@ -1,0 +1,28 @@
+.home-section {
+  background-color: $white;
+  padding: $large-spacing;
+}
+
+.home-section-inner {
+  @include margin(null auto);
+  max-width: $max-width * 0.75;
+}
+
+.home-section-header {
+  margin-bottom: $base-spacing;
+  text-align: center;
+
+  h2 {
+    color: $action-color;
+    padding-bottom: $base-spacing;
+    position: relative;
+
+    &::after {
+      @include position(absolute, null 0 0);
+      @include size($small-spacing 2px);
+      background-color: $action-color;
+      content: "";
+      margin: auto;
+    }
+  }
+}

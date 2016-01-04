@@ -5,6 +5,16 @@ nav: login
 main
   .main-inner
 
+section.home-section
+  header.home-section-inner.home-section-header
+    h2 Supported Languages &amp; Frameworks
+    h4 What we don't know for sure is whether or not authors often misinterpret the train as a bragging limit, when in actuality it feels more like a dullish development.
+  ul.supported-languages
+    - data.supported_languages.each do |a|
+      li.supported-language
+        = partial "svg/#{a.icon}.svg"
+        h6 = a.name
+
 .modal-overlay
   = partial "index/register"
   = partial "index/sign_in"

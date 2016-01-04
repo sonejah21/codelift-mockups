@@ -15,6 +15,7 @@
     @include flex(flex-start);
     font-size: rem(40);
     font-weight: 100;
+    line-height: (50 / 40);
     margin: 0;
   }
 

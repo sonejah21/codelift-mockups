@@ -10,63 +10,12 @@
   flex: 1 0 18rem;
   padding: $small-spacing $base-spacing;
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    @include margin($base-spacing null $small-spacing);
-  }
-
-  h1 {
-    font-size: rem(33);
-    line-height: (40 / 33);
-  }
-
-  h2 {
-    font-size: rem(25);
-    line-height: (30 / 25);
-  }
-
-  h3 {
-    font-size: rem(21);
-    line-height: (30 / 21);
-  }
-
-  h4 {
-    font-size: rem(19);
-    line-height: (30 / 19);
-  }
-
-  h5 {
-    font-size: rem(15);
-    line-height: (20 / 15);
-  }
-
-  h6 {
-    font-size: rem(13);
-    font-weight: 600;
-    line-height: (20 / 13);
-  }
-
-  p {
-    font-size: rem(17);
-    line-height: (30 / 17);
-  }
-
   ul {
     @extend %default-ul;
   }
 
   ol {
     @extend %default-ol;
-  }
-
-  li {
-    @include margin($smallest-spacing 0);
-    font-size: rem(17);
-    line-height: (30 / 17);
   }
 }
 

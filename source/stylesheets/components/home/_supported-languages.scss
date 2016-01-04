@@ -1,0 +1,18 @@
+.supported-languages {
+  @include flex(center, flex-start);
+  flex-wrap: wrap;
+}
+
+.supported-language {
+  @include margin($small-spacing);
+  flex: 0 0 $xl-spacing;
+  text-align: center;
+
+  svg {
+    @include size($base-spacing);
+  }
+
+  h6 {
+    @include margin($smallest-spacing null 0);
+  }
+}
