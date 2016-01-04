@@ -1,0 +1,47 @@
+.cover {
+  @include flex;
+  background-color: $action-color;
+  background-size: cover;
+  color: $white;
+  padding: $xl-spacing $base-spacing;
+  position: relative;
+  text-align: center;
+  z-index: $fixed-header-z-index + 1;
+
+  &::before {
+    @include position(absolute, 0);
+    background-image: image-url("noise.gif");
+    content: "";
+    opacity: 0.03;
+  }
+}
+
+.cover-content {
+  @include scale-font-size;
+  position: relative;
+
+  h1 {
+    @include margin(1em null);
+    font-size: em(40);
+    font-weight: 100;
+    line-height: 1.25;
+    text-shadow: $hero-text-shadow;
+  }
+
+  p {
+    @include margin(1em null);
+    font-size: em(20);
+    font-weight: 300;
+    line-height: 1.5;
+    max-width: 35em;
+    text-shadow: $hero-text-shadow;
+  }
+
+  .button {
+    font-size: em(20);
+    font-weight: 300;
+    line-height: 1.5;
+    margin-top: 1em;
+    padding: 0.5em 1em;
+  }
+}

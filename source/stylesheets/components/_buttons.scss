@@ -94,16 +94,17 @@
 .button-large {
   font-size: $large-font-size;
   font-weight: 300;
-  padding: $base-spacing;
-
-  &:hover {
-    background-color: darken($white, 5%);
-  }
+  line-height: 1.5;
+  padding: $small-spacing $base-spacing;
 }
 
 .button-reverse {
   background-color: $white;
   color: $action-color;
+
+  &:hover {
+    background-color: darken($white, 5%);
+  }
 }
 
 .button-small {

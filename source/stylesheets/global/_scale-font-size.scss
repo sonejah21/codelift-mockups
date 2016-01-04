@@ -1,0 +1,11 @@
+@mixin scale-font-size($min-font: 14, $max-font: 24, $min-screen: 384, $max-screen: 1600) {
+  font-size: #{$min-font}px;
+
+  @media (min-width: #{$min-screen}px) and (max-width: #{$max-screen}px){
+    font-size: calc( #{$min-font}px + ( #{$max-font} - #{$min-font} ) * ( (100vw - #{$min-screen}px) / ( #{$max-screen} - #{$min-screen}) ));
+  }
+
+  @media (min-width: #{$max-screen}px){
+    font-size: #{$max-font}px;
+  }
+}

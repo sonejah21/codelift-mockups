@@ -8,6 +8,7 @@
 @import "global/card";
 @import "global/flex";
 @import "global/layout";
+@import "global/scale-font-size";
 @import "global/spinner";
 
 @import "components/accounts";
@@ -28,7 +29,11 @@
 
 @import "components/form/icon";
 @import "components/form/row";
+@import "components/home/cover";
+@import "components/home/get-started";
 @import "components/home/header";
+@import "components/home/hero";
+@import "components/home/layout";
 @import "components/home/section";
 @import "components/home/supported-languages";
 @import "components/modal/modal";

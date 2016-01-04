@@ -2,11 +2,10 @@
 nav: login
 ---
 
-main
-  .main-inner
-
-= partial "index/supported-languages"
-= partial "index/get-started"
+main.home
+  = partial "index/hero"
+  = partial "index/supported-languages"
+  = partial "index/get-started"
 
 .modal-overlay
   = partial "index/register"
