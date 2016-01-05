@@ -154,7 +154,7 @@ PLATFORMS
 DEPENDENCIES
   bourbon
   jquery-middleman
-  middleman
+  middleman (= 3.3.12)
   middleman-autoprefixer
   middleman-deploy
   middleman-livereload
@@ -163,4 +163,4 @@ DEPENDENCIES
   slim
 
 BUNDLED WITH
-   1.10.6
+   1.11.2
