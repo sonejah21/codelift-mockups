@@ -1,0 +1,12 @@
+section.home-section
+  header.home-header.home-section-inner
+    h2 In ancient times an Owl is a shrine-like Dad
+    h4 They were lost without the closet that composed their comb. A mall is the thread of a liquid. We can assume that any instance of a craftsman can be construed as a spinose girdle.
+  .home-section-inner
+    ul.process
+      - data.process.each do |p|
+        li.process-step
+          .process-icon
+            = partial "svg/#{p.icon}.svg"
+          h4 = p.headline
+          p = p.description

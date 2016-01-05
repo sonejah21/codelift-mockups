@@ -1,7 +1,7 @@
 .hero {
   background-image: image-url("hero.jpg");
   background-position: 44% top;
-  min-height: 60vh;
+  min-height: 61.8vh;
 
   svg {
     @include size(15em 5.1em);

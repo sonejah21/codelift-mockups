@@ -1,0 +1,32 @@
+.process {
+  @include flex(center, flex-start);
+  flex-wrap: wrap;
+}
+
+.process-step {
+  @include margin($small-spacing $base-spacing);
+  flex: 1 0 16rem;
+  text-align: center;
+
+  h4 {
+    @include margin($smallest-spacing null 0);
+    font-weight: 400;
+  }
+
+  p {
+    font-size: $xs-font-size;
+  }
+}
+
+.process-icon {
+  @include flex;
+  @include size(rem(64));
+  background-color: $light-border-color;
+  border-radius: 50%;
+  color: rgba($action-color, 0.8);
+  margin: auto;
+
+  svg {
+    @include size(rem(32));
+  }
+}

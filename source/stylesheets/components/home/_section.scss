@@ -1,6 +1,10 @@
 .home-section {
   background-color: $white;
-  padding: $large-spacing;
+  padding: $xl-spacing $large-spacing;
+
+  &:nth-child(odd) {
+    background-color: lighten($off-white, 1%);
+  }
 }
 
 .home-section-inner {
