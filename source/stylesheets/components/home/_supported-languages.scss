@@ -9,10 +9,10 @@
   text-align: center;
 
   svg {
-    @include size($base-spacing);
+    @include size($large-spacing);
   }
 
   h6 {
-    @include margin($smallest-spacing null 0);
+    @include margin(0 null);
   }
 }

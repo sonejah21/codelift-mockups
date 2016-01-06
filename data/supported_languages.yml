@@ -1,12 +1,12 @@
 -
-  icon: github
+  icon: supported-ruby
   name: Ruby on Rails
 -
-  icon: github
-  name: Spring
--
-  icon: github
+  icon: supported-javascript
   name: Node.js
 -
-  icon: github
+  icon: supported-python
   name: Django
+-
+  icon: supported-java
+  name: Spring
