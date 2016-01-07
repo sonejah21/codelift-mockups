@@ -29,14 +29,6 @@
 
 @import "components/form/icon";
 @import "components/form/row";
-@import "components/home/cover";
-@import "components/home/get-started";
-@import "components/home/header";
-@import "components/home/hero";
-@import "components/home/layout";
-@import "components/home/process";
-@import "components/home/section";
-@import "components/home/supported-languages";
 @import "components/modal/modal";
 @import "components/modal/overlay";
 @import "components/nav/nav";
@@ -45,3 +37,13 @@
 @import "components/nav/link";
 @import "components/tabs/tabs";
 @import "components/tabs/nav";
+
+@import "home/cover";
+@import "home/get-started";
+@import "home/header";
+@import "home/hero";
+@import "home/layout";
+@import "home/pricing";
+@import "home/process";
+@import "home/section";
+@import "home/supported-languages";

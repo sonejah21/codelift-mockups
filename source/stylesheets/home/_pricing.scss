@@ -1,0 +1,101 @@
+.pricing {
+  background-image: image-url("pricing.jpg");
+  background-position: center 45%;
+  background-size: cover;
+}
+
+.pricing-tiers {
+  @include flex(center, flex-start);
+  @include margin(null auto);
+  flex-wrap: wrap;
+  max-width: 36rem;
+}
+
+.pricing-tier {
+  background-color: rgba($white, 0.2);
+  border-radius: $base-border-radius;
+  box-shadow: $card-shadow, 0 1px 32px rgba($black, 0.04);
+  flex: 0 0 16rem;
+  margin: $small-spacing;
+  position: relative;
+  text-align: center;
+
+  &::before {
+    @include linear-gradient(30deg, $dark-action-color, $light-action-color);
+    @include position(absolute, 0);
+    border-radius: $base-border-radius;
+    content: "";
+    opacity: 0;
+    transition: all $base-transition;
+  }
+
+  &:hover{
+    &::before {
+      opacity: 1;
+    }
+
+    .pricing-tier-inner {
+      background-color: $white;
+    }
+  }
+
+  hr {
+    @include linear-gradient(90deg, $dark-action-color, $light-action-color);
+    border: 0;
+    height: 1px;
+  }
+}
+
+.pricing-tier-inner {
+  background-color: rgba($white, 0.7);
+  border-radius: $base-border-radius;
+  margin: rem(4);
+  padding: $base-spacing - rem(4);
+  position: relative;
+  transition: background-color $base-transition;
+}
+
+.pricing-type {
+  @include margin(0 null);
+  font-weight: 400;
+  margin-bottom: $small-spacing;
+}
+
+.pricing-price {
+  @include margin($small-spacing null $base-spacing);
+  font-size: rem(48);
+  font-weight: 100;
+  line-height: (50 / 48);
+
+  sup {
+    font-size: 50%;
+    font-weight: 300;
+    top: auto;
+    vertical-align: super;
+  }
+
+  sub {
+    bottom: auto;
+    font-size: 33.333%;
+    font-weight: 300;
+    margin-left: -0.375em;
+  }
+}
+
+.pricing-features {
+  @include margin($small-spacing null);
+
+  li {
+    @include margin($smallest-spacing null);
+    font-size: $xs-font-size;
+
+    &.unsupported {
+      opacity: 0.4;
+      text-decoration: line-through;
+    }
+  }
+}
+
+.pricing-cta {
+  @include margin($base-spacing null $small-spacing);
+}

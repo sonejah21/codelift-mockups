@@ -52,6 +52,8 @@ $white: #fff;
 // Font Colors
 $base-font-color: $medium-gray;
 $action-color: tint($primary-color, 12%);
+$dark-action-color: darken(adjust-hue($action-color, -20%), 20%);
+$light-action-color: lighten(adjust-hue($action-color, 40%), 30%);
 
 // Border
 $base-border-color: rgba($dark-gray, 0.1);

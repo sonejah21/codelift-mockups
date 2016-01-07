@@ -1,5 +1,6 @@
 .home-section {
   background-color: $white;
+  box-shadow: inset 0 1px rgba(lighten($action-color, 50%), 0.4);
   padding: $xl-spacing $large-spacing;
 
   &:nth-child(odd) {
