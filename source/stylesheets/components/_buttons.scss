@@ -76,6 +76,10 @@
     color: $medium-gray;
   }
 
+  &.success {
+    color: $success-color;
+  }
+
   svg {
     @include size(3rem);
   }
