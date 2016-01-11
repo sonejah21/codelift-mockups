@@ -49,6 +49,7 @@
 .pricing-tier-inner {
   background-color: rgba($white, 0.7);
   border-radius: $base-border-radius;
+  -webkit-font-smoothing: antialiased;
   margin: rem(4);
   padding: $base-spacing - rem(4);
   position: relative;
@@ -88,6 +89,7 @@
   li {
     @include margin($smallest-spacing null);
     font-size: $xs-font-size;
+    font-weight: 400;
 
     &.unsupported {
       opacity: 0.4;
