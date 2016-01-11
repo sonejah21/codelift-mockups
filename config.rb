@@ -1,4 +1,5 @@
 require "slim"
+require "support-for"
 
 set :relative_links, true
 set :css_dir, "stylesheets"
