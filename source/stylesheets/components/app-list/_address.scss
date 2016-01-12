@@ -1,0 +1,32 @@
+.app-list-footer {
+  @include padding(rem(5) $base-spacing);
+  background-color: rgba($dark-gray, 0.015);
+  box-shadow: $list-shadow;
+}
+
+.app-list-address {
+  @include margin(0 null);
+  font-size: $xs-font-size;
+  font-weight: 400;
+  line-height: $base-spacing;
+
+  a {
+    @include ellipsis;
+    color: rgba($base-font-color, 0.4);
+    display: block;
+
+    &:hover {
+      color: rgba($base-font-color, 0.6);
+    }
+  }
+
+  svg {
+    @include size(rem(13));
+    margin-right: rem(12);
+  }
+}
+
+.app-list-repo,
+.app-list-branch {
+  margin-left: 0.25em;
+}

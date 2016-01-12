@@ -1,40 +1,54 @@
--
-  site: github
+- site: github
   org: serious
   repo: business
   branch: release-4.0.0
--
-  site: bitbucket
-  org: a-super-long-org-name
-  repo: really-really-long-repo-name
+  status: deployed
+  deployments:
+    - url: https://authors.often.misinterpret.the.bakery:31299
+      commit: 9de523b
+      deployed: one hour ago
+    - url: http://a.graphic.novel.without.theories:4888
+      commit: 22aba90
+      deployed: one day ago
+- site: bitbucket
+  org: a-super-duper-long-org-name
+  repo: a-really-really-long-repo-name
   branch: master
--
-  site: github
+  status: new
+- site: github
   org: developer
   repo: code-mountain
   branch: develop
--
-  site: github
+  status: analyzing
+- site: github
   org: developer
   repo: code-mountain
   branch: master
--
-  site: github
+  status: analyzed
+- site: github
   org: serious
   repo: business
   branch: release-4.0.0
--
-  site: bitbucket
-  org: a-super-long-org-name
-  repo: really-really-long-repo-name
+  status: configured
+- site: bitbucket
+  org: a-super-duper-long-org-name
+  repo: a-really-really-long-repo-name
   branch: master
--
-  site: github
+  status: deployed
+  deployments:
+    - url: https://a.friend.is.a.tortoise:8032
+      commit: 0f02bbb
+      deployed: two days ago
+    - url: https://some.actors.are.thought.of.as.saxophones:777
+      commit: 42c3bda
+      deployed: one week ago
+- site: github
   org: developer
   repo: code-mountain
   branch: develop
--
-  site: github
+  status: new
+- site: github
   org: developer
   repo: code-mountain
   branch: master
+  status: analyzing

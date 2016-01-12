@@ -1,0 +1,24 @@
+.app-filter-header {
+  box-shadow: 0 2px $base-border-color;
+  font-weight: 600;
+  line-height: $base-spacing;
+  letter-spacing: 0.05em;
+  margin-bottom: $smallest-spacing;
+  opacity: 0.5;
+  text-transform: uppercase;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.app-filter {
+  li {
+    margin-bottom: $smallest-spacing / 2;
+  }
+
+  svg {
+    @include size(rem(13));
+    margin-right: rem(12);
+  }
+}

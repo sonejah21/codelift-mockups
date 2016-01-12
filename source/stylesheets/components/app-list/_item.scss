@@ -1,0 +1,7 @@
+.app-list-item {
+  @extend %card;
+
+  & + & {
+    margin-top: $small-spacing;
+  }
+}

@@ -1,0 +1,59 @@
+nav.app-filters
+  h6.app-filter-header Status
+  ul.app-filter
+    li
+      label.toggle
+        span.app-status class="is-new"
+          = partial "svg/progress.svg"
+        input type="checkbox" checked="checked"
+        span.toggle-text New
+        = partial "svg/check.svg"
+    li
+      label.toggle
+        span.app-status class="is-analyzing"
+          = partial "svg/progress.svg"
+        input type="checkbox" checked="checked"
+        span.toggle-text Analyzing
+        = partial "svg/check.svg"
+    li
+      label.toggle
+        span.app-status class="is-analyzed"
+          = partial "svg/progress.svg"
+        input type="checkbox" checked="checked"
+        span.toggle-text Analyzed
+        = partial "svg/check.svg"
+    li
+      label.toggle
+        span.app-status class="is-configured"
+          = partial "svg/progress.svg"
+        input type="checkbox" checked="checked"
+        span.toggle-text Configured
+        = partial "svg/check.svg"
+    li
+      label.toggle
+        span.app-status class="is-deployed"
+          = partial "svg/progress.svg"
+        input type="checkbox" checked="checked"
+        span.toggle-text Deployed
+        = partial "svg/check.svg"
+
+  h6.app-filter-header Orgs
+  ul.app-filter
+    li
+      label.toggle
+        = partial "svg/github.svg"
+        input type="checkbox" checked="checked"
+        span.toggle-text serious
+        = partial "svg/check.svg"
+    li
+      label.toggle
+        = partial "svg/bitbucket.svg"
+        input type="checkbox" checked="checked"
+        span.toggle-text a-super-duper-long-org-name
+        = partial "svg/check.svg"
+    li
+      label.toggle
+        = partial "svg/github.svg"
+        input type="checkbox" checked="checked"
+        span.toggle-text developer
+        = partial "svg/check.svg"

@@ -1,0 +1,41 @@
+.app-list-deployments {
+  margin-top: rem(-12);
+  padding-top: rem(6);
+  position: relative;
+
+  &::before {
+    @include position(absolute, 0 null rem(30) rem(6));
+    background-color: $light-gray;
+    content: "";
+    width: 1px;
+  }
+
+  li {
+    @include padding(rem(10) $base-spacing null);
+    position: relative;
+
+    &::before {
+      @include position(absolute, rem(18) null 0 rem(4));
+      @include size(5px);
+      background-color: $success-color;
+      border-radius: 50%;
+      content: "";
+    }
+  }
+
+  h6 {
+    @include margin(0 null);
+    color: rgba($base-font-color, 0.6);
+    font-weight: 400;
+    line-height: rem(20);
+  }
+
+  a {
+    font-weight: 600;
+    opacity: 0.6;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}

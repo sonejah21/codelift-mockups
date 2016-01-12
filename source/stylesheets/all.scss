@@ -7,17 +7,19 @@
 
 @import "global/card";
 @import "global/flex";
+
+@import "global/app-status";
 @import "global/file";
 @import "global/layout";
 @import "global/scale-font-size";
 @import "global/select";
 @import "global/spinner";
+@import "global/toggle";
 
 @import "components/accounts";
 @import "components/add-app";
 @import "components/alerts";
 @import "components/analysis";
-@import "components/app-list";
 @import "components/auth";
 @import "components/avatar";
 @import "components/buttons";
@@ -28,6 +30,12 @@
 @import "components/footer";
 @import "components/section-header";
 
+@import "components/app-list/address";
+@import "components/app-list/deployments";
+@import "components/app-list/filter";
+@import "components/app-list/header";
+@import "components/app-list/item";
+@import "components/app-list/layout";
 @import "components/form/icon";
 @import "components/form/row";
 @import "components/modal/modal";

@@ -1,0 +1,8 @@
+.app-list-header {
+  padding: $small-spacing $base-spacing;
+}
+
+.app-list-name {
+  @include margin(0 null);
+  line-height: (40 / 25);
+}

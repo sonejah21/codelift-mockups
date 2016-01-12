@@ -1,0 +1,64 @@
+.app-status {
+  .dot {
+    fill: $white;
+  }
+
+  &.is-analyzed {
+    .outer {
+      fill: $tertiary-color;
+    }
+  }
+
+  &.is-analyzing {
+    .outer {
+      fill: $light-gray;
+    }
+
+    .dot {
+      fill: $action-color;
+      transform: translateY(-3.5px);
+    }
+
+    svg {
+      animation: rotate 2s $ease-in-out-cubic infinite;
+    }
+  }
+
+  &.is-configured,
+  &.is-deployed {
+    .outer {
+      fill: $success-color;
+    }
+  }
+
+  &.is-deployed {
+    .dot {
+      fill: $success-color;
+    }
+  }
+
+  &.is-new {
+    .outer,
+    .inner {
+      fill: $light-gray;
+    }
+
+    .dot {
+      fill: $action-color;
+    }
+  }
+
+  svg {
+    @include size(rem(13));
+    margin-right: rem(7);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

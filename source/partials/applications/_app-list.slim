@@ -1,14 +1,24 @@
-ol.app-list
-  - data.repos.each do |r|
-    li
-      .app-list-primary
-        .app-list-site
-          = partial "svg/#{r.site}.svg"
-        .app-list-repo
-          <span>#{r.org} /</span> <strong>#{r.repo}</strong>
-      .app-list-secondary
-        .app-list-branch = r.branch
-        .app-list-actions
-          = link_to "Info", "application.html", class: "button button-fill"
-          button.button-delete
-            = partial "svg/x.svg"
+.app-list
+  ol.app-list-items
+    - data.repos.each do |r|
+      li.app-list-item
+        header.app-list-header
+          h2.app-list-name
+            span.app-status class="is-#{r.status}"
+              = partial "svg/progress.svg"
+            = link_to r.repo, "application.html"
+          - if r.deployments?
+            ol.app-list-deployments
+              - r.deployments.each do |d|
+                li
+                  h6 = link_to d.url, d.url
+                  h6 Commit #{d.commit} • Deployed #{d.deployed}
+        footer.app-list-footer
+          h6.app-list-address
+            = link_to "#" do
+              = partial "svg/#{r.site}.svg"
+              span.app-list-org #{r.org} /
+              span.app-list-repo = r.repo
+              span.app-list-branch = ": #{r.branch}"
+
+  = partial "applications/app-list-filter"
