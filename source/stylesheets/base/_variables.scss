@@ -25,7 +25,7 @@ $max-modal-width: 800px;
 $modal-margin: 5vh;
 $max-modal-height: 100vh - (2 * $modal-margin);
 $avatar-size: 2.25rem;
-$logo-size: 7.5rem 2.55rem;
+$logo-size: rem(147) rem(35);
 
 // Colors
 $purple: #341184;
@@ -53,7 +53,7 @@ $white: #fff;
 $base-font-color: $medium-gray;
 $action-color: tint($primary-color, 12%);
 $dark-action-color: darken(adjust-hue($action-color, -20%), 20%);
-$light-action-color: lighten(adjust-hue($action-color, 40%), 30%);
+$light-action-color: lighten(adjust-hue($action-color, 60%), 10%);
 
 // Border
 $base-border-color: rgba($dark-gray, 0.1);

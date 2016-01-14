@@ -2,9 +2,18 @@
   background-image: image-url("hero.jpg");
   background-position: 44% top;
   min-height: 61.8vh;
+  position: relative;
+
+  &::before {
+    @include position(absolute, 0);
+    background-image: linear-gradient($light-action-color, rgba($action-color, 0), $dark-action-color);
+    background-color: transparent;
+    content: "";
+    opacity: 0.4;
+  }
 
   svg {
-    @include size(15em 5.1em);
+    @include size(em(256) em(60));
     filter: drop-shadow(0 3px 0px rgba($black, 0.1));
   }
 }
