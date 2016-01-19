@@ -5,7 +5,7 @@
   font-size: rem(18);
   height: $nav-height;
   letter-spacing: 0.03em;
-  margin-left: $base-spacing;
+  margin-right: rem(40);
   transition: box-shadow $base-duration $ease-in-out-back, color $base-transition;
 
   &:hover {

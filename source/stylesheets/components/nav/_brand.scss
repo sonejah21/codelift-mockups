@@ -2,7 +2,7 @@
   @include flex;
   color: $white;
   height: $nav-height;
-  padding-right: $base-spacing;
+  margin-right: rem(40);
 
   svg {
     @include size($logo-size);
