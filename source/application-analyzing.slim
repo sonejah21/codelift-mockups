@@ -11,20 +11,16 @@ header.page-header
       li
         = link_to "Analyze", "#analyze", class: "tabs-link active"
       li
-        = link_to "Configure", "#configure", class: "tabs-link"
+        = link_to "Configure", "#configure", class: "tabs-link disabled"
       li
-        = link_to "Build", "#build", class: "tabs-link"
-      li
-        = link_to "Deploy", "#deploy", class: "tabs-link"
+        = link_to "Deploy", "#deploy", class: "tabs-link disabled"
 
 main
   .main-inner#page-sections
     section.tabs-section.active#analyze
-      = partial "application/analyze"
+      = partial "application/analyze-analyzing"
     section.tabs-section#configure
       = partial "application/configure"
-    section.tabs-section#build
-      = partial "application/build"
     section.tabs-section#deploy
       = partial "application/deploy"
 

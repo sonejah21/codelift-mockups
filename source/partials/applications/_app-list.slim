@@ -6,7 +6,7 @@
           h2.app-list-name
             span.app-status class="is-#{r.status}"
               = partial "svg/progress.svg"
-            = link_to r.repo, "application.html"
+            = link_to r.repo, "application-#{r.status}.html"
           - if r.deployments?
             ol.app-list-deployments
               - r.deployments.each do |d|

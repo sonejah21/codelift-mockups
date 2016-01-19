@@ -6,7 +6,16 @@
 .analysis-status {
   @include flex;
   box-shadow: 1px 0 $base-border-color;
+  color: $action-color;
   padding: $base-spacing;
+
+  &.restart svg,
+  &.start svg {
+    @include size(rem(64));
+    background-color: $light-border-color;
+    border-radius: 50%;
+    padding: rem(12);
+  }
 }
 
 .analysis-results {

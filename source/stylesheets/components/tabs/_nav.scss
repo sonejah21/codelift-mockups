@@ -30,4 +30,9 @@
     opacity: 1;
     transition: box-shadow $base-duration $ease-in-out-back, opacity $base-transition;
   }
+
+  &.disabled {
+    opacity: 0.1;
+    pointer-events: none;
+  }
 }
