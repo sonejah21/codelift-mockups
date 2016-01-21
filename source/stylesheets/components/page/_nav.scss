@@ -1,34 +1,15 @@
 .page-nav {
-  @include margin((-$small-spacing) auto 0);
-  @include flex(space-between);
-  padding: 0 $base-spacing;
-  max-width: $max-width;
+  @include padding(null $small-spacing);
+  box-shadow: inset 0 -1px $light-border-color;
 
   ul {
-    display: flex;
+    @include flex(flex-start);
+    @include margin(null auto);
+    max-width: $max-width;
+    padding-left: $base-spacing;
   }
 
   li {
     margin-right: $base-spacing;
-  }
-}
-
-.tabs-link {
-  @include flex;
-  box-shadow: inset 0 -1px rgba($action-color, 0);
-  font-size: $xs-font-size;
-  font-weight: 400;
-  height: $large-spacing;
-  opacity: 0.5;
-  transition: box-shadow $base-transition, opacity $base-transition;
-
-  &:hover {
-    box-shadow: inset 0 -1px rgba($action-color, 1);
-  }
-
-  &.active {
-    box-shadow: inset 0 -3px $action-color;
-    opacity: 1;
-    transition: box-shadow $base-duration $ease-in-out-back, opacity $base-transition;
   }
 }
