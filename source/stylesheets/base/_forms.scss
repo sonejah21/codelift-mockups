@@ -16,7 +16,6 @@ select {
 label {
   font-size: $xs-font-size;
   font-weight: 400;
-  letter-spacing: 0.03em;
 
   &.required::after {
     content: "*";

@@ -2,7 +2,7 @@
   @include flex(flex-start);
   box-shadow: $list-shadow;
   flex-wrap: wrap;
-  padding: $smallest-spacing $base-spacing;
+  padding: $xs-spacing $base-spacing;
 
   &.centered {
     justify-content: center;
@@ -13,10 +13,10 @@
   flex: 1 0 ($large-spacing * 3);
   font-size: $xxs-font-size;
   line-height: $small-spacing;
-  margin: $smallest-spacing $small-spacing $smallest-spacing 0;
+  margin: $xs-spacing $small-spacing $xs-spacing 0;
 }
 
 .form-row-input {
   flex: 8 1 ($large-spacing * 6);
-  margin: $smallest-spacing 0;
+  margin: $xs-spacing 0;
 }

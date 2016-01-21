@@ -85,13 +85,12 @@
   }
 }
 
-.button-fill {
-  background-color: $light-border-color;
+.button-reverse {
+  background-color: $white;
   color: $action-color;
 
   &:hover {
-    background-color: $action-color;
-    color: $white;
+    background-color: darken($white, 5%);
   }
 }
 
@@ -102,16 +101,12 @@
   padding: $small-spacing $base-spacing;
 }
 
-.button-reverse {
-  background-color: $white;
-  color: $action-color;
-
-  &:hover {
-    background-color: darken($white, 5%);
-  }
-}
-
 .button-small {
   font-size: $xxs-font-size;
-  padding: $smallest-spacing $small-spacing;
+  padding: $xs-spacing $small-spacing;
+}
+
+.button-tiny {
+  font-size: $xxs-font-size;
+  padding: $xxs-spacing $xs-spacing;
 }

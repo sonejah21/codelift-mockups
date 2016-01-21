@@ -1,6 +1,6 @@
 .toggle {
   @include flex;
-  @include padding($smallest-spacing null);
+  @include padding($xs-spacing null);
   cursor: pointer;
   font-size: $small-font-size;
   font-weight: 300;
@@ -10,7 +10,7 @@
     display: none;
 
     ~ svg {
-      @include margin(null $smallest-spacing);
+      @include margin(null $xs-spacing);
       @include size(1rem);
       opacity: 0.2;
       transition: opacity $base-transition;

@@ -1,10 +1,8 @@
 .nav-link {
   @include flex;
   box-shadow: inset 0 0 transparent;
-  color: rgba($white, 0.75);
-  font-size: rem(18);
+  color: rgba($white, 0.8);
   height: $nav-height;
-  letter-spacing: 0.03em;
   margin-right: rem(40);
   transition: box-shadow $base-duration $ease-in-out-back, color $base-transition;
 

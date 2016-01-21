@@ -19,7 +19,7 @@ ol {
   &%default-ul,
   &%default-ol {
     li {
-      @include margin($smallest-spacing 0);
+      @include margin($xs-spacing 0);
       font-size: rem(17);
       line-height: (30 / 17);
     }

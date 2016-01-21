@@ -29,7 +29,7 @@
 }
 
 .deploy-name {
-  @include margin(0 null $smallest-spacing);
+  @include margin(0 null $xs-spacing);
   font-size: $large-font-size;
   font-weight: 300;
 }
@@ -53,11 +53,11 @@
 
   ul {
     @include flex(space-between);
-    @include margin(null (-$smallest-spacing));
+    @include margin(null (-$xs-spacing));
   }
 
   li {
-    @include margin(null $smallest-spacing);
+    @include margin(null $xs-spacing);
     flex: 1;
   }
 }

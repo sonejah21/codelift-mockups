@@ -37,8 +37,4 @@
   @include media($large-screen-up) {
     box-shadow: -1px 0 $base-border-color;
   }
-
-  .deactivate {
-    @extend .button-fill;
-  }
 }

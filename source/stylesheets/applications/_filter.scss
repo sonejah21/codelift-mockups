@@ -2,8 +2,7 @@
   box-shadow: 0 2px $base-border-color;
   font-weight: 600;
   line-height: $base-spacing;
-  letter-spacing: 0.05em;
-  margin-bottom: $smallest-spacing;
+  margin-bottom: $xs-spacing;
   opacity: 0.5;
   text-transform: uppercase;
 
@@ -14,7 +13,7 @@
 
 .app-filter {
   li {
-    margin-bottom: $smallest-spacing / 2;
+    margin-bottom: $xs-spacing / 2;
   }
 
   svg {
