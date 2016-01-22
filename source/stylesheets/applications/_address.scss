@@ -1,27 +1,24 @@
 .app-list-footer {
-  @include padding(rem(5) $base-spacing);
-  background-color: rgba($dark-gray, 0.015);
-  box-shadow: $list-shadow;
+  @extend %card-footer;
+  @include padding($xs-spacing $base-spacing);
 }
 
 .app-list-address {
-  @include margin(0 null);
+  @include flex(flex-start);
+  color: rgba($base-font-color, 0.4);
   font-size: $xs-font-size;
   font-weight: 400;
-  line-height: $base-spacing;
+  line-height: $small-spacing;
+  overflow: hidden;
+  white-space: nowrap;
 
-  a {
-    @include ellipsis;
-    color: rgba($base-font-color, 0.4);
-    display: block;
-
-    &:hover {
-      color: rgba($base-font-color, 0.6);
-    }
+  &:hover {
+    color: rgba($base-font-color, 0.6);
   }
 
   svg {
-    @include size(rem(13));
+    flex: 0 0 rem(13);
+    height: rem(13);
     margin-right: rem(12);
   }
 }

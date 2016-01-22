@@ -1,15 +1,16 @@
 .app-list {
-  @include flex(center, flex-start);
-  @include margin(null (-$small-spacing));
-  flex-wrap: wrap;
+  @extend %columns;
+}
+
+.app-list-items,
+.app-filters {
+  @extend %column;
 }
 
 .app-list-items {
-  @include margin(null $small-spacing $base-spacing);
   flex: 2 30rem;
 }
 
 .app-filters {
-  @include margin(null ($base-spacing + $small-spacing) $base-spacing);
   flex: 1 15rem;
 }

@@ -14,11 +14,10 @@
                   h6 = link_to d.url, d.url
                   h6 Commit #{d.commit} • Deployed #{d.deployed}
         footer.app-list-footer
-          h6.app-list-address
-            = link_to "#" do
-              = partial "svg/#{r.site}.svg"
-              span.app-list-org #{r.org} /
-              span.app-list-repo = r.repo
-              span.app-list-branch = ": #{r.branch}"
+          = link_to "#", class: "app-list-address" do
+            = partial "svg/#{r.site}.svg"
+            span.app-list-org #{r.org} /
+            span.app-list-repo = r.repo
+            span.app-list-branch = ": #{r.branch}"
 
   = partial "applications/app-list-filter"

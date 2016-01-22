@@ -1,0 +1,9 @@
+%columns {
+  @include flex(center, flex-start);
+  @include margin(null (-$small-spacing));
+  flex-wrap: wrap;
+}
+
+%column {
+  @include margin(null $small-spacing $base-spacing);
+}
